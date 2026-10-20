@@ -11,3 +11,6 @@ __pycache__/
 modelo_tiny/
 *.zip
 *.docx
+
+# Plantillas de variables de entorno: tampoco se suben
+.env.*

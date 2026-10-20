@@ -1,0 +1,13 @@
+# Instalación:  pip install -r requirements.txt   (PyTorch para CPU se instala con la línea de abajo)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.5
+transformers>=4.56,<5.19
+peft>=0.17,<0.22
+accelerate>=1.0
+safetensors>=0.4
+tokenizers>=0.21
+openai>=1.99,<4
+matplotlib>=3.9
+pandas>=2.0
+jupyter
+ipykernel

@@ -1,0 +1,35 @@
+[
+  {
+    "corrida": "c1_espanol",
+    "idioma": "español",
+    "estudiante": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "nota_antes": 1,
+    "nota_despues": 1.08,
+    "aprob_antes": 0.0,
+    "aprob_despues": 0.0,
+    "minutos": 2.2,
+    "supera_2": false
+  },
+  {
+    "corrida": "c2_ingles",
+    "idioma": "inglés",
+    "estudiante": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "nota_antes": 2.08,
+    "nota_despues": 2.83,
+    "aprob_antes": 0.0,
+    "aprob_despues": 0.0,
+    "minutos": 1.9,
+    "supera_2": true
+  },
+  {
+    "corrida": "c3_ingles_360m",
+    "idioma": "inglés",
+    "estudiante": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "nota_antes": 4.08,
+    "nota_despues": 4.58,
+    "aprob_antes": 0.08,
+    "aprob_despues": 0.0,
+    "minutos": 2.1,
+    "supera_2": true
+  }
+]

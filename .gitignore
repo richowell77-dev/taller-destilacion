@@ -1,0 +1,13 @@
+# Secretos y entorno local: NUNCA al repositorio
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+
+# Archivos pesados o temporales
+modelo_tiny/
+*.zip
+*.docx

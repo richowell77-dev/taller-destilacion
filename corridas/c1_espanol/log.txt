@@ -1,0 +1,70 @@
+﻿.\.venv\Scripts\python.exe : Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to 
+enable higher rate limits and faster downloads.
+En línea: 3 Carácter: 1
++ .\.venv\Scripts\python.exe destila.py *> C:\slm\taller-a\log_corrida1 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning: You ar...ster downloads.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:\slm\taller-a\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` 
+cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in 
+C:\Users\richa\.cache\huggingface\hub\models--HuggingFaceTB--SmolLM2-135M-Instruct. Caching files will still work but 
+in a degraded version that might require more space on your disk. This warning can be disabled by setting the 
+`HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see 
+https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In 
+order to activate developer mode, see this article: 
+https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+C:\slm\taller-a\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` 
+cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in 
+C:\Users\richa\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more 
+space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment 
+variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In 
+order to activate developer mode, see this article: 
+https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+✔ Configuración: profesor = openai (gpt-6-luna) · estudiante = HuggingFaceTB/SmolLM2-135M-Instruct · dispositivo = cpu
+→ El profesor (gpt-6-luna) escribe 72 preguntas sobre 6 temas…
+→ 72 preguntas. El profesor las responde…
+✔ 60 pares de entrenamiento · 12 preguntas de examen · 48 s · profesor: 78 llamadas · 9,001 tokens de entrada · 13,978 de salida · ≈ US$ 0.0079
+→ Cargando estudiante 'HuggingFaceTB/SmolLM2-135M-Instruct' (la primera vez se descarga desde Hugging Face)…
+
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]
+Loading weights:  25%|██▌       | 68/272 [00:00<00:00, 672.39it/s]
+Loading weights:  50%|█████     | 136/272 [00:00<00:00, 608.55it/s]
+Loading weights:  73%|███████▎  | 198/272 [00:00<00:00, 592.36it/s]
+Loading weights:  96%|█████████▌| 261/272 [00:00<00:00, 591.64it/s]
+Loading weights: 100%|██████████| 272/272 [00:00<00:00, 612.54it/s]
+✔ Estudiante listo: 135 M parámetros · LoRA entrena 4.88 M (3.6 %)
+→ [antes] el estudiante responde 12 preguntas…
+→ [antes] el juez califica…
+✔ [antes] nota media 1/10 · aprobación 0% · 49.2 s
+→ Entrenando: 60 ejemplos · 3 épocas · 45 pasos · lote 4
+   época 1 · paso 5/45 · pérdida 2.775 · 117 s
+   época 1 · paso 10/45 · pérdida 2.817 · 269 s
+   época 1 · paso 15/45 · pérdida 2.917 · 376 s
+   época 2 · paso 20/45 · pérdida 2.726 · 506 s
+   época 2 · paso 25/45 · pérdida 2.499 · 624 s
+   época 2 · paso 30/45 · pérdida 2.651 · 797 s
+   época 3 · paso 35/45 · pérdida 2.672 · 899 s
+   época 3 · paso 40/45 · pérdida 2.329 · 1027 s
+   época 3 · paso 45/45 · pérdida 2.652 · 1192 s
+✔ Entrenamiento listo en 1193 s · pérdida 3.147 → 2.6524 · checkpoint en salidas/checkpoint
+→ [despues] el estudiante responde 12 preguntas…
+→ [despues] el juez califica…
+✔ [despues] nota media 1.08/10 · aprobación 0% · 82.4 s
+✔ Gráfico: C:\slm\taller-a\salidas\resultados.png · tabla y ejemplos: C:\slm\taller-a\salidas\resultados.md
+
+================================================================
+RESULTADO: nota 1 → 1.08 · aprobación 0% → 0% · 23.7 min en total
+================================================================
+Tú › Explica qué es LoRA y para qué sirve en un banco.
+
+Destilado › Lo RA: Revisión del modelo; reemplazado por una fuente o ajustación que permite verificar datos correctamente. La asociació entre la persona y el usuario (pueden ser desactivadas) e los resultados actualizables son más rápidas. El BANCO: Aproximaciones, respaldo, calidad y información sobre las pruebas. La asociacion fue utilizada con sujeto al usuarios consultan
+
+Base (sin entrenar) › Lo que es lo que es lo que se dice: "El estilo de la información" (The structure of the information). En el banco de datos, lo que se dice es: "La información". Esto significa que los datos son las informaciones ocupados por la información del banco.
+
+En tu caso, si no hay una información en tu banco, pueden ser más trabajando con otros servicios comunes a través de la información generalizada. Por ejempl
+

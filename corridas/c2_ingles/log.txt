@@ -1,0 +1,48 @@
+﻿✔ Configuración: profesor = openai (gpt-6-luna) · estudiante = HuggingFaceTB/SmolLM2-135M-Instruct · dispositivo = cpu
+→ El profesor (gpt-6-luna) escribe 72 preguntas sobre 6 temas…
+→ 72 preguntas. El profesor las responde…
+✔ 60 pares de entrenamiento · 12 preguntas de examen · 39 s · profesor: 78 llamadas · 8,617 tokens de entrada · 14,486 de salida · ≈ US$ 0.0081
+→ Cargando estudiante 'HuggingFaceTB/SmolLM2-135M-Instruct' (la primera vez se descarga desde Hugging Face)…
+.\.venv\Scripts\python.exe : 
+En línea: 3 Carácter: 1
++ .\.venv\Scripts\python.exe -u destila.py *> C:\slm\taller-a\log_corri ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]
+Loading weights:  28%|██▊       | 75/272 [00:00<00:00, 743.62it/s]
+Loading weights:  55%|█████▌    | 150/272 [00:00<00:00, 562.58it/s]
+Loading weights:  77%|███████▋  | 209/272 [00:00<00:00, 489.69it/s]
+Loading weights: 100%|██████████| 272/272 [00:00<00:00, 545.53it/s]
+✔ Estudiante listo: 135 M parámetros · LoRA entrena 4.88 M (3.6 %)
+→ [antes] el estudiante responde 12 preguntas…
+→ [antes] el juez califica…
+✔ [antes] nota media 2.33/10 · aprobación 0% · 67.6 s
+→ Entrenando: 60 ejemplos · 3 épocas · 45 pasos · lote 4
+   época 1 · paso 5/45 · pérdida 3.574 · 50 s
+   época 1 · paso 10/45 · pérdida 3.626 · 105 s
+   época 1 · paso 15/45 · pérdida 3.613 · 162 s
+   época 2 · paso 20/45 · pérdida 3.144 · 242 s
+   época 2 · paso 25/45 · pérdida 3.268 · 328 s
+   época 2 · paso 30/45 · pérdida 3.448 · 422 s
+   época 3 · paso 35/45 · pérdida 2.870 · 493 s
+   época 3 · paso 40/45 · pérdida 3.118 · 549 s
+   época 3 · paso 45/45 · pérdida 2.902 · 619 s
+✔ Entrenamiento listo en 620 s · pérdida 3.8173 → 2.902 · checkpoint en salidas/checkpoint
+→ [despues] el estudiante responde 12 preguntas…
+→ [despues] el juez califica…
+✔ [despues] nota media 2.5/10 · aprobación 0% · 87.4 s
+✔ Gráfico: C:\slm\taller-a\salidas\resultados.png · tabla y ejemplos: C:\slm\taller-a\salidas\resultados.md
+
+================================================================
+RESULTADO: nota 2.33 → 2.5 · aprobación 0% → 0% · 14.1 min en total
+================================================================
+Tú › Explain what LoRA is and what it is useful for in a bank.
+
+Destilado › LoRa stands for Low-Rate Automatic Translation. It’s a service that can translate documents from one language to another without human intervention—for example, translating a customer complaint into Spanish or French while the company still processes payments. LoRs work by sending small packets of text (called “messages”) through a network link with each document sent only when needed: no more than 10 seconds may be exchanged between customers and banks; they don’t require approval before delivery; and they use machine translation models trained on real-world examples rather than expensive human translations. They help reduce errors caused by
+
+Base (sin entrenar) › LoRa (Low-Rate Wide Area Network) is a wireless communication technology that allows devices to communicate with each other over short distances without the need for traditional cellular networks or Wi-Fi routers. It's designed specifically for use within mobile applications such as smart home devices, fitness trackers, and IoT sensors.
+
+In a bank setting, LoRa can be used to enable secure data transfer between different systems, including credit card processing, online banking, and payment gateways. This feature makes it ideal for transactions involving sensitive financial information like account balances, transaction history, and security codes. By using
+

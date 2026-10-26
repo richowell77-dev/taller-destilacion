@@ -21,6 +21,13 @@ que corre en CPU, con ajuste fino LoRA. Configuración y dominio **por defecto d
 - **CPU vs. GPU:** la GPU T4 entrena ≈ 60× más rápido (10 s vs. ≈ 10 min), pero la calidad es la misma con la misma configuración. Lo que mejora la nota es el idioma (inglés) y el tamaño del estudiante (360M).
 - Antes de las corridas reales se validó la instalación con `python destila.py --sin-internet` (simulado, nota 1 → 9,33). No se incluye en los resultados porque no usa la API.
 
+## Modelo publicado en Hugging Face
+
+- **Adaptador LoRA** (≈ 19 MB, requiere `peft`): https://huggingface.co/richowell7/taller-destilacion-slm
+- **Versión fusionada** (≈ 270 MB, sin `peft`): https://huggingface.co/richowell7/taller-destilacion-slm-merged
+
+Publicados con `subir_hf.py` y `subir_hf_fusionado.py`; ambos se probaron descargándolos desde cero, sin token.
+
 ## Cómo reproducir
 
 ```bash
@@ -48,4 +55,5 @@ python demo.py                        # 5 preguntas nuevas, base vs. destilado
 | `informe/` | Informe individual (PDF) |
 
 Licencias: SmolLM2 tiene licencia Apache 2.0. Los términos de OpenAI restringen usar sus salidas para crear modelos que compitan con OpenAI; este trabajo es de uso educativo.
+
 

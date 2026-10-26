@@ -14,3 +14,6 @@ modelo_tiny/
 
 # Plantillas de variables de entorno: tampoco se suben
 .env.*
+
+# Carpetas generadas para publicar en Hugging Face (el modelo fusionado supera el límite de GitHub)
+salidas/para_hf_*/
